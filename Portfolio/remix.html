@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Carousel and Portfolio</title>
+    <link rel="stylesheet" href="remix.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+
+</head>
+<body id="home">
+    <!-- Header -->
+    <!-- Header -->
+    <!-- Header -->
+    <header class="header">
+        <span class="logo">
+            <i class="fas fa-user"></i> Ryniacz
+        </span>
+        <nav class="navbar">
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+            <a href="#about"><i class="fas fa-user"></i> About Me</a>
+            <a href="#skills"><i class="fas fa-tools"></i> Skills</a>
+
+            <!-- 🔽 Dropdown Portfolio -->
+            <div class="dropdown">
+                <a href="#portfolio" class="dropdown-toggle portfolio-main">
+                    <i class="fas fa-briefcase"></i> Portfolio
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#portfolio-video" class="portfolio-link">🎬 Video</a></li>
+                    <li><a href="#portfolio-graphics" class="portfolio-link">🎨 Graphics</a></li>
+                    <li><a href="#portfolio-coding" class="portfolio-link">💻 Coding</a></li>
+                </ul>
+            </div>
+
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </header>
+
+
+    
+    
+
+    <!-- Carousel Section -->
+    <section id="home">
+        <div class="slider-container">
+            <div class="slider">
+                <!-- Slide 1: Twój Personalny Wizerunek z mediami społecznościowymi -->
+                <div class="slide">
+                    <img src="image/slide1.png" alt="Slide 1">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <h2 class="title">RYNIACZ STUDIO</h2>
+                            <h3 class="topic">Crafting visuals that inspire and engage</h3>
+                            <!-- Updated Buttons -->
+                            <div class="buttons">
+                                <a href="#about" class="read-more">Read More</a>
+                                <a href="#portfolio-video" class="view-project">View Projects</a>
+                                <a href="#contact" class="contact-me">Contact Me</a>
+                            </div>
+                            <!-- Social Media Icons -->
+                            <h4 class="social-title">📲 Check out my social media</h4>
+                            <div class="social-icons">
+                                <a href="https://www.youtube.com/@ryniacz" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a href="https://tiktok.com/@yourprofile" target="_blank"><i class="fab fa-tiktok"></i></a>
+                                <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/łukasz-zacharewicz" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/lukaszryn" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>                     
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Slide 2: Twój Personalny Wizerunek z mediami społecznościowymi -->
+                <div class="slide">
+                    <img src="image/slide2.png" alt="Slide 1">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <h2 class="title">FILMMAKING & EDITING</h2>
+                            <h3 class="topic">Bringing stories to life through motion</h3>
+                            
+        
+                            <!-- Social Media Icons -->
+                            <!-- Updated Buttons -->
+                            <div class="buttons">
+                                <a href="#portfolio-video" class="view-project">View Projects</a>
+                                
+                                
+                            </div>
+                            
+                            <!-- Social Media Icons -->
+                            <h4 class="social-title">📲 Check out my social media</h4>
+                            <div class="social-icons">
+                                <a href="https://www.youtube.com/@ryniacz" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a href="https://tiktok.com/@yourprofile" target="_blank"><i class="fab fa-tiktok"></i></a>
+                                <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            
+                
+                <!-- Slide 3: Twój Personalny Wizerunek z mediami społecznościowymi -->
+                <div class="slide">
+                    <img src="image/slide3.png" alt="Air Cinematography">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <h2 class="title">AIR CINEMATOGRAPHY</h2>
+                            <h3 class="topic">Capturing the world from a new perspective</h3>
+                            
+                            <div class="buttons">
+                                <a href="#portfolio-video" class="view-project">View Projects</a>
+                            </div>
+                            <h4 class="social-title">📲 Check out my social media</h4>
+                            <div class="social-icons">
+                                <a href="https://www.youtube.com/@ryniacz" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a href="https://tiktok.com/@yourprofile" target="_blank"><i class="fab fa-tiktok"></i></a>
+                                <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Strzałki nawigacyjne -->
+            <button class="carousel-control prev">&#10094;</button>
+            <button class="carousel-control next">&#10095;</button>
+        
+            <!-- Wskaźniki -->
+            <div class="carousel-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+                
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT ME SECTION -->
+    <section id="about">
+        
+        <!-- Nagłówek sekcji -->
+        <h2 class="fade-in about-title">🌟 ABOUT ME 🌟</h2>
+        
+        <!-- Kontener dla całej sekcji -->
+        <div class="about-container">
+            
+            <!-- Sekcja zdjęcia -->
+            <div class="about-image slide-in-left">
+                <img src="photo-logo/ja.jpg" alt="My Photo">
+            </div>
+            
+            <!-- Sekcja tekstu -->
+            <div class="about-text slide-in-right">
+                
+                <!-- Wstęp -->
+                <h3 class="about-heading">👋 Hi, I'm Łukasz!</h3>
+                <p class="about-description">
+                    A passionate <span class="highlight">video editor</span> and <span class="highlight">AI enthusiast</span>. 
+                    I love crafting cinematic effects, motion graphics, and high-quality visuals.
+                </p>
+
+                <!-- Co robię? -->
+                <h3 class="about-heading">🚀 What do I do?</h3>
+                <p class="about-description">
+                    I bring <span class="highlight">ideas to life</span> through dynamic video editing
+                    and visual storytelling. From high-energy social media content to cinematic projects, 
+                    I make sure every second stands out.
+                </p>
+
+                <!-- Dlaczego to robię? -->
+                <h3 class="about-heading">🔥 Why do I do it?</h3>
+                <p class="about-description">
+                    I'm fascinated by how <span class="highlight">art meets technology</span>. 
+                    Using AI-powered effects and classic film techniques, I create stunning visuals 
+                    that captivate and inspire.
+                </p>
+                
+            </div> <!-- KONIEC .about-text -->
+
+        </div> <!-- KONIEC .about-container -->
+    </section>
+
+    <!-- SKILLS-->
+    <section id="skills">
+        <h2 class="skills-title">MY SKILLS</h2>
+    
+        <div class="skills-container">
+            
+            <!-- Video Editing -->
+            <div class="skill-box" data-category="portfolio-video">
+                <div class="category-logo" style="background-image: url('photo-logo/logo-videoedit.png');"></div>
+                <div class="skill-content">
+                    <h3>Video Editing</h3>
+                    <div class="icons-container">
+                        <img src="photo-thumb/logo-aftereffects.png" class="floating-icon" alt="After Effects">
+                        <img src="photo-thumb/logo-davinci.png" class="floating-icon" alt="DaVinci Resolve">
+                        <img src="photo-thumb/logo-premierepro.png" class="floating-icon" alt="Premiere Pro">
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Graphic Design -->
+            <div class="skill-box" data-category="portfolio-graphics">
+                <div class="category-logo" style="background-image: url('photo-logo/graph.jpg');"></div>
+                <div class="skill-content">
+                    <h3>Graphic Design</h3>
+                    <div class="icons-container">
+                        <img src="photo-thumb/logo-photoshop.png" class="floating-icon" alt="Photoshop">
+                        <img src="photo-thumb/logo-illustrator.png" class="floating-icon" alt="Illustrator">
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Coding & Data Science -->
+            <div class="skill-box" data-category="portfolio-coding">
+                <div class="category-logo" style="background-image: url('photo-logo/logo-datascience.png');"></div>
+                <div class="skill-content">
+                    <h3>Coding & Data Science</h3>
+                    <div class="icons-container">
+                        <img src="photo-thumb/logo-python.png" class="floating-icon" alt="Python">
+                        <img src="photo-thumb/logo-sql.png" class="floating-icon" alt="SQL">
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    
+    
+    <!-- Portfolio Section -->
+
+    <!-- VIDEO PROJECTS -->
+    <!-- PORTFOLIO MAIN HEADER -->
+    <section id="portfolio">
+        <h2 class="portfolio-title">💼 MY PORTFOLIO 💼</h2>
+    </section>
+    
+
+        <!-- Sekcja Video Projects -->
+    <section class="portfolio" id="portfolio-video">
+        <h2 class="section-title">🎬 VIDEO <span>PROJECTS</span> 🎬</h2>
+
+        <div class="portfolio-categories">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="after-effects">After Effects</button>
+            <button class="filter-btn" data-category="davinci">DaVinci Resolve</button>
+            <button class="filter-btn" data-category="premiere">Premiere Pro</button>
+        </div>
+
+        <div class="portfolio-container" id="video-container"></div>
+    </section>
+
+    <!-- Sekcja Graphic Projects -->
+    <section class="portfolio" id="portfolio-graphics">
+        <h2 class="section-title">🎨 GRAPHIC <span>PROJECTS</span> 🎨</h2>
+
+        <div class="portfolio-categories">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="photoshop">Photoshop</button>
+            <button class="filter-btn" data-category="illustrator">Illustrator</button>
+        </div>
+
+        <div class="portfolio-container" id="graphic-container"></div>
+    </section>
+
+    <!-- Sekcja Coding Projects -->
+    <section class="portfolio" id="portfolio-coding">
+        <h2 class="section-title">💻 CODING <span>PROJECTS</span> 💻</h2>
+
+        <div class="portfolio-categories">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="python">Python</button>
+            <button class="filter-btn" data-category="machine-learning">Machine Learning</button>
+            <button class="filter-btn" data-category="data-visualization">Data Visualization</button>
+        </div>
+
+        <div class="portfolio-container" id="coding-container"></div>
+    </section>
+
+
+
+
+
+
+
+
+    
+
+        <!-- Contact Section -->
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+
+            <!-- Contact Info (Now Above the Form) -->
+            <div class="contact-info-box">
+                <h2 class="contact-heading">Have Questions? Get in Touch! 📢</h2>
+                <p class="contact-text">
+                    We’re here to help! If you have any questions about our services, collaborations, or just want to chat, feel free to reach out.
+                </p>
+                <p class="contact-details">
+                    <span class="emoji">📧</span> Email: <strong>ryniacz13@gmail.com</strong><br>
+                    <span class="emoji">💬</span> Available 24/7
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2 class="heading">Let's Talk 💬</h2>
+                <form id="contact-form" method="POST">
+                    <div class="input-box">
+                        <label for="name">Name*</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="message">Message*</label>
+                        <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+                    </div>
+                    <button type="submit" class="send-btn">Send Message</button>
+                    <div id="contact-message" style="margin-top: 10px; font-weight: bold;"></div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    
+    
+    
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Ryniacz | All Rights Reserved.</p>
+        </div>
+
+        <!-- Ikony mediów społecznościowych -->
+        <div class="footer-social-icons">
+            <a href="https://www.youtube.com/@ryniacz" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/łukasz-zacharewicz" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/lukaszryn" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home">
+                <i class="bx bx-up-arrow-alt"></i>
+            </a>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="remix.js"></script>
+</body>
+</html>
