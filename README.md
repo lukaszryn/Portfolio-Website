@@ -30,8 +30,8 @@ This is my **personal portfolio website**, designed to showcase my **projects, s
 
 ```plaintext
 
-
 Portfolio/
+│
 │── details/               # Individual project pages
 │
 │── graphics-project/      # Contains custom graphics used in the website
