@@ -28,10 +28,10 @@ This is my **personal portfolio website**, designed to showcase my **projects, s
 
 ## 📂 Folder Structure
 
+```plaintext
 
-Strona
-│
-│
+
+Strona/
 │── details/               # Individual project pages
 │
 │── graphics-project/      # Contains custom graphics used in the website
